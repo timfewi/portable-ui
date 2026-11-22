@@ -5,6 +5,9 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "files": {
+    "includes": ["**", "!dist"]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -12,7 +15,9 @@
   },
   "html": {
     "experimentalFullSupportEnabled": true,
-    "formatter": { "enabled": true }
+    "formatter": {
+      "enabled": true
+    }
   },
   "linter": {
     "enabled": true,

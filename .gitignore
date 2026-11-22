@@ -9,6 +9,5 @@ result-*
 __pycache__/
 .visual-qa/
 node_modules/
-dist/
 coverage/
 .astro/

@@ -24,7 +24,8 @@ and no runtime dependencies besides React 18.3+ or 19.
 ## Install
 
 The package is not on the npm registry yet. Install it from GitHub; the
-`prepare` script builds `dist/` with Bun during installation.
+built files in `dist/` are part of the repository, so no build runs on your
+side.
 
 ```sh
 bun add github:timfewi/portable-ui
@@ -32,12 +33,8 @@ bun add github:timfewi/portable-ui
 npm install github:timfewi/portable-ui
 ```
 
-Bun only runs lifecycle scripts of trusted dependencies. If `dist/` is missing
-after `bun add`, trust the package once:
-
-```sh
-bun pm trust portable-ui
-```
+Pin a commit for reproducible installs, e.g.
+`github:timfewi/portable-ui#<commit>`.
 
 ## Usage
 
@@ -227,9 +224,13 @@ bun run typecheck
 bun run build      # dist/index.js, type declarations and dist/portable-ui.css
 ```
 
+`dist/` is committed. After changing `src/`, run `bun run build` and commit the
+rebuilt files; the `build-dist` check fails while they are out of date.
+
 The playground in [`playground/`](playground/) shows every component.
 `just check` runs the full fast gate: formatting, Biome lint, Nix lint,
-typecheck, tests and build. Development tools are declared in `devenv.nix`;
+typecheck, tests and the dist freshness check. Development tools are declared
+in `devenv.nix`;
 enter them with `devenv shell`.
 
 ## License

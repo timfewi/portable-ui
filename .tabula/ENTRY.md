@@ -21,8 +21,9 @@ dependency.
 - [Maps](../src/map/Map.tsx) place markers by frame fractions, independent of any map library.
 - [Shell](../src/shell/Shell.tsx) wraps the sidebar above content on narrow screens.
 - [Build](../scripts/build.ts) bundles with `Bun.build`, emits declarations with `tsc` and copies the CSS.
+- [Dist check](../scripts/check-dist.ts) rebuilds the committed `dist/` and fails when it differs from Git, because GitHub installs use it unbuilt.
 - [Playground](../playground/main.tsx) shows every component; `bun run dev` serves it on port 5173.
-- [Checks](../.project-checks.json) run format, lint, Nix lint, typecheck, tests and build in the fast gate.
+- [Checks](../.project-checks.json) run format, lint, Nix lint, typecheck, tests and the dist freshness check in the fast gate.
 - [Toolchain](../devenv.nix) and [recipes](../Justfile) declare the development environment.
 
 ## Design rules

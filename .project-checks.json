@@ -44,9 +44,9 @@
       "profiles": ["fast"]
     },
     {
-      "name": "build",
-      "argv": ["bun", "run", "build"],
-      "requires": ["bun"],
+      "name": "build-dist",
+      "argv": ["bun", "scripts/check-dist.ts"],
+      "requires": ["bun", "git"],
       "timeout_seconds": 120,
       "profiles": ["fast"]
     },

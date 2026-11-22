@@ -48,7 +48,6 @@
     "dev": "bun --hot --port 5173 ./playground/index.html",
     "test": "bun test",
     "build": "bun scripts/build.ts",
-    "prepare": "bun scripts/build.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "fmt": "just fmt",
     "fmt:check": "just fmt-check",
