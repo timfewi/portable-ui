@@ -200,9 +200,9 @@ Override any variable on a wrapper to adjust the theme:
 }
 ```
 
-Interface text uses Inter and code uses JetBrains Mono, each followed by
-CaskaydiaCove Nerd Font and system fonts. The package does not bundle fonts;
-load them in your app if you want them.
+Interface text uses Inter when available and otherwise uses the system's
+proportional font. Code uses JetBrains Mono, CaskaydiaCove Nerd Font Mono or
+the system monospace font. Applications can load their preferred fonts.
 
 ## Accessibility
 

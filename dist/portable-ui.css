@@ -76,7 +76,7 @@
 }
 
 :root {
-  --pui-font-sans: "Inter", "CaskaydiaCove Nerd Font", system-ui, sans-serif;
+  --pui-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --pui-font-mono:
     "JetBrains Mono", "CaskaydiaCove Nerd Font Mono", ui-monospace, monospace;
   --pui-radius-sm: 4px;
@@ -1664,6 +1664,7 @@ figure.pui-heatmap {
 .pui-stat {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: 8px;
   padding: 16px 18px;
 }
@@ -1681,6 +1682,8 @@ figure.pui-heatmap {
 }
 
 .pui-stat__value {
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-size: 32px;
   line-height: 36px;
   font-weight: 600;
