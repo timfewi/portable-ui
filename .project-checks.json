@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "checks": [
+    {
+      "name": "format",
+      "argv": ["just", "fmt-check"],
+      "requires": ["just", "python3", "rg", "nixfmt", "shfmt", "bun"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "statix",
+      "argv": ["statix", "check", "."],
+      "requires": ["statix"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "deadnix",
+      "argv": ["deadnix", "--fail", "."],
+      "requires": ["deadnix"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "biome-lint",
+      "argv": ["bun", "scripts/biome.mjs", "lint", "--error-on-warnings", "."],
+      "requires": ["bun"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "typecheck",
+      "argv": ["bun", "run", "typecheck"],
+      "requires": ["bun"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "test",
+      "argv": ["bun", "test"],
+      "requires": ["bun"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "build",
+      "argv": ["bun", "run", "build"],
+      "requires": ["bun"],
+      "timeout_seconds": 120,
+      "profiles": ["fast"]
+    },
+    {
+      "name": "flake-check",
+      "argv": ["nix", "flake", "check", "--no-write-lock-file", "."],
+      "requires": ["nix"],
+      "timeout_seconds": 900,
+      "profiles": ["full"]
+    }
+  ],
+  "watch_ignore": [
+    ".devenv",
+    ".direnv",
+    "dist",
+    "node_modules",
+    "result",
+    "result-*"
+  ]
+}

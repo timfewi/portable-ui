@@ -1,0 +1,14 @@
+.devenv/
+.direnv/
+/.env
+/secrets.enc.yaml
+/.tabula/state.json
+/.tabula/index.html
+result
+result-*
+__pycache__/
+.visual-qa/
+node_modules/
+dist/
+coverage/
+.astro/
