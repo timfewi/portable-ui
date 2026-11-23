@@ -3,7 +3,8 @@
 React components for team work tools: Kanban boards, chat rooms, charts and
 maps. The palette comes from the **Portable** desktop theme: black and neutral
 grey surfaces, muted semantic colors and a lavender accent. Dark is the
-reference mode; light is a separately chosen palette, not an inversion.
+reference mode; light is a separately chosen palette, not an inversion: white
+raised surfaces on a cool grey page with a blue accent.
 
 - **Core:** buttons, fields, switch, checkbox, radio, segmented control, tabs,
   badges, tags, avatars with presence, alerts, toasts, progress, skeletons,
@@ -177,16 +178,16 @@ All colors are CSS variables on the provider element:
 
 | Variable               | Dark      | Light     |
 | ---------------------- | --------- | --------- |
-| `--pui-bg`             | `#000000` | `#f4f4f4` |
-| `--pui-surface`        | `#161616` | `#e8e8e8` |
-| `--pui-surface-raised` | `#1e1e1e` | `#dfdfdf` |
-| `--pui-fg`             | `#e8e8e8` | `#151515` |
-| `--pui-muted`          | `#8a8a8a` | `#4b4b4b` |
-| `--pui-accent`         | `#9482ad` | `#6200a3` |
-| `--pui-success`        | `#80977d` | `#005020` |
-| `--pui-warning`        | `#b59c6c` | `#783000` |
-| `--pui-error`          | `#b96f7d` | `#94082c` |
-| `--pui-info`           | `#71979a` | `#004090` |
+| `--pui-bg`             | `#000000` | `#f4f5f7` |
+| `--pui-surface`        | `#161616` | `#fafbfc` |
+| `--pui-surface-raised` | `#1e1e1e` | `#ffffff` |
+| `--pui-fg`             | `#e8e8e8` | `#16181d` |
+| `--pui-muted`          | `#8a8a8a` | `#545c69` |
+| `--pui-accent`         | `#9482ad` | `#1f5fcc` |
+| `--pui-success`        | `#80977d` | `#17703a` |
+| `--pui-warning`        | `#b59c6c` | `#8a5300` |
+| `--pui-error`          | `#b96f7d` | `#b4233c` |
+| `--pui-info`           | `#71979a` | `#0b6875` |
 
 The full set, including hover, selected, border and terminal colors, is in
 [`src/portable-ui.css`](src/portable-ui.css). The same values are exported as

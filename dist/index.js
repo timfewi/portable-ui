@@ -446,26 +446,26 @@ var palette = {
     series: ["#9372c8", "#bb731b", "#0098b7", "#58994a"]
   },
   light: {
-    background: "#f4f4f4",
-    surface: "#e8e8e8",
-    surfaceRaised: "#dfdfdf",
-    surfaceVariant: "#d6d6d6",
-    surfaceHover: "#cdcdcd",
-    surfaceSelected: "#c3c3c3",
-    border: "#696969",
-    foreground: "#151515",
-    muted: "#4b4b4b",
-    suggestion: "#555555",
-    accent: "#6200a3",
+    background: "#f4f5f7",
+    surface: "#fafbfc",
+    surfaceRaised: "#ffffff",
+    surfaceVariant: "#eceef2",
+    surfaceHover: "#e3e6eb",
+    surfaceSelected: "#dbe5f7",
+    border: "#868e9c",
+    foreground: "#16181d",
+    muted: "#545c69",
+    suggestion: "#5f6673",
+    accent: "#1f5fcc",
     onAccent: "#ffffff",
-    success: "#005020",
-    warning: "#783000",
-    error: "#94082c",
-    info: "#004090",
+    success: "#17703a",
+    warning: "#8a5300",
+    error: "#b4233c",
+    info: "#0b6875",
     terminalAmber: "#9a4b13",
-    terminalGreen: "#2e7d32",
+    terminalGreen: "#28732d",
     terminalRed: "#b3261e",
-    series: ["#7a3fc0", "#b0652a", "#2a6fb8", "#3f8a46"]
+    series: ["#2a6fb8", "#b0652a", "#7a3fc0", "#3f8a46"]
   }
 };
 var cssVar = {
@@ -3544,5 +3544,5 @@ export {
   useTheme
 };
 
-//# debugId=3BB9C92B966521DF64756E2164756E21
+//# debugId=2024DD18FABF496564756E2164756E21
 //# sourceMappingURL=index.js.map

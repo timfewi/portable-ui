@@ -1,6 +1,9 @@
-// Palette values mirror themes/portable.json in the dotfiles repository.
-// Chart series are not part of that file: they keep Portable's hues but raise
-// chroma so adjacent series stay distinguishable for color-vision deficiencies.
+// The dark palette mirrors themes/portable.json in the dotfiles repository.
+// The light palette is chosen here: white raised surfaces on a cool grey page,
+// borders at 3:1 for controls, text and status colors at 4.5:1 or more on every
+// surface, and a blue accent. Chart series are not part of the dotfiles theme:
+// they keep Portable's hues but raise chroma so adjacent series stay
+// distinguishable for color-vision deficiencies; light mode leads with blue.
 // portable-ui.css declares the same values as CSS variables; test/tokens.test.ts
 // keeps the two in sync.
 
@@ -53,26 +56,26 @@ export const palette: Record<ThemeMode, PortablePalette> = {
     series: ["#9372c8", "#bb731b", "#0098b7", "#58994a"],
   },
   light: {
-    background: "#f4f4f4",
-    surface: "#e8e8e8",
-    surfaceRaised: "#dfdfdf",
-    surfaceVariant: "#d6d6d6",
-    surfaceHover: "#cdcdcd",
-    surfaceSelected: "#c3c3c3",
-    border: "#696969",
-    foreground: "#151515",
-    muted: "#4b4b4b",
-    suggestion: "#555555",
-    accent: "#6200a3",
+    background: "#f4f5f7",
+    surface: "#fafbfc",
+    surfaceRaised: "#ffffff",
+    surfaceVariant: "#eceef2",
+    surfaceHover: "#e3e6eb",
+    surfaceSelected: "#dbe5f7",
+    border: "#868e9c",
+    foreground: "#16181d",
+    muted: "#545c69",
+    suggestion: "#5f6673",
+    accent: "#1f5fcc",
     onAccent: "#ffffff",
-    success: "#005020",
-    warning: "#783000",
-    error: "#94082c",
-    info: "#004090",
+    success: "#17703a",
+    warning: "#8a5300",
+    error: "#b4233c",
+    info: "#0b6875",
     terminalAmber: "#9a4b13",
-    terminalGreen: "#2e7d32",
+    terminalGreen: "#28732d",
     terminalRed: "#b3261e",
-    series: ["#7a3fc0", "#b0652a", "#2a6fb8", "#3f8a46"],
+    series: ["#2a6fb8", "#b0652a", "#7a3fc0", "#3f8a46"],
   },
 };
 
